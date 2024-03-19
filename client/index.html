@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Exoplanet Query</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NASA Exoplanet Query</h1>
+        <div class="query-panel">
+            <label for="year">Year of Discovery:</label>
+            <select id="year">
+                <!-- Options for years will be generated dynamically -->
+            </select>
+            <label for="method">Discovery Method:</label>
+            <select id="method">
+                <!-- Options for discovery methods -->
+            </select>
+            <label for="host">Host Name:</label>
+            <select id="host">
+                <!-- Options for host names -->
+            </select>
+            <label for="facility">Discovery Facility:</label>
+            <select id="facility">
+                <!-- Options for discovery facilities -->
+            </select>
+            <button id="search">Search</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="results-panel">
+            <table id="results-table">
+                <!-- Results will be displayed here -->
+            </table>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Dynamically generate options for the year dropdown
+        var yearDropdown = document.getElementById("year");
+        var currentYear = new Date().getFullYear();
+        for (var year = currentYear; year >= 1992; year--) {
+            var option = document.createElement("option");
+            option.value = year;
+            option.text = year;
+            yearDropdown.appendChild(option);
+        }
+    </script>
+</body>
+</html>

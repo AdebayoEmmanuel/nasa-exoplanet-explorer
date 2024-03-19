@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.query-panel {
+    margin-bottom: 20px;
+}
+
+.query-panel label,
+.query-panel select {
+    margin-right: 10px;
+}
+
+.results-panel {
+    margin-bottom: 20px;
+}
+
+.results-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-panel th,
+.results-panel td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.results-panel th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
