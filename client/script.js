@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (year || method || host || facility) {
       // Perform search and display results
       // performSearch(year, method, host, facility);
-      const proxyUrl = '34.234.201.187';
+      const proxyUrl = 'http://34.234.201.187/';
       const targetUrl = 'https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps+where+default_flag=1&format=csv';
       const apiUrl = proxyUrl + targetUrl;
       fetch(apiUrl, {

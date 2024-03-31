@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Send a GET request and save the response to a file
 curl -o response.csv 'https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name,hostname,discoverymethod,disc_facility,disc_instrument,disc_year+from+ps+where+default_flag=1&format=csv'
 
