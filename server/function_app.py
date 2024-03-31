@@ -2,8 +2,8 @@ import azure.functions as func
 import datetime
 import json
 import logging
-from csv2json.main import bp1
+from csv2json.main import json_converter
 
 app = func.FunctionApp()
 
-app.register_functions(bp1)
+app.register_functions(json_converter)
