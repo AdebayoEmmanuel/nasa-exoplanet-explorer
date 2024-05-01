@@ -1,3 +1,6 @@
+
+![_1d58ac9a-346f-462d-a182-cd3d48c62719](https://github.com/AdebayoEmmanuel/nasa-exoplanet-explorer/assets/92952014/5f0e4769-9be0-4e71-8236-39ff9f8e4169)
+
 # NASA Exoplanet Explorer
 
 My Very Eyes Must Just See Under Nine…?
